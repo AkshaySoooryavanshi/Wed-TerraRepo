@@ -2,13 +2,10 @@
 apt update
 apt install -y apache2
 
-# Get the instance ID using the instance metadata
-INSTANCE_ID=$(curl -s http://169.254.169.254/latest/meta-data/instance-id)
-
 # Install the AWS CLI
 apt install -y awscli
 
-# Create a simple HTML file with the travel story content
+# Create an enhanced HTML file with a vibrant travel-themed layout
 cat <<EOF > /var/www/html/index.html
 <!DOCTYPE html>
 <html lang="en">
@@ -19,52 +16,55 @@ cat <<EOF > /var/www/html/index.html
   <style>
     body {
       font-family: 'Arial', sans-serif;
-      background-color: #f0f8ff;
+      background-color: #e0f7fa; /* Light blue background */
       margin: 0;
       padding: 0;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
-      color: #333;
     }
     .container {
       max-width: 600px;
       text-align: center;
       padding: 20px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      background-color: white;
-      border-radius: 8px;
+      background-color: #fff8dc; /* Cornsilk color */
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     }
     h1 {
-      color: #2a52be;
-      margin-bottom: 10px;
+      color: #ff4500; /* OrangeRed color */
+      margin-bottom: 20px;
     }
     h2 {
-      color: #008b8b;
-      margin-bottom: 15px;
+      color: #ffa500; /* Orange color */
+      margin-bottom: 20px;
     }
     p {
       font-size: 18px;
       line-height: 1.6;
+      color: #2e8b57; /* SeaGreen color */
       margin-bottom: 20px;
     }
     .footer {
       font-size: 14px;
-      color: #666;
+      color: #808080; /* Gray color */
       margin-top: 30px;
+    }
+    .footer p {
+      margin-bottom: 10px;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Adventures in the Alps</h1>
-    <h2>A Journey Through the Mountains</h2>
-    <p>Join me as I recount my exhilarating journey through the Alpine landscape. From breathtaking views atop towering peaks to the serene beauty of the valleys, each moment was a testament to nature's wonders.</p>
-    <p>This adventure has been a life-changing experience, offering not just scenic beauty but also a chance to reflect and grow. The mountains, with their majestic and unyielding presence, have taught me the value of perseverance and awe.</p>
+    <h1>Enchanting Tuscany</h1>
+    <h2>Exploring the Heart of Italy</h2>
+    <p>Discover the rolling hills, vineyards, and rich history of Tuscany. This picturesque region offers a journey through medieval towns, art, and unforgettable culinary experiences.</p>
+    <p>From the historic streets of Florence to the Leaning Tower of Pisa, every step is a journey through time. The sunset over the Tuscan landscape is an artist's palette of vibrant colors, a breathtaking sight that lingers in memory.</p>
     <div class="footer">
-      <p>Instance ID: <span>$INSTANCE_ID</span></p>
       <p>Powered by EC2 and Terraform</p>
+      <p>© 2024 Travel Diaries</p>
     </div>
   </div>
 </body>
@@ -73,4 +73,4 @@ EOF
 
 # Start Apache and enable it on boot
 systemctl start apache2
-systemctl enable
+systemctl enable apache2
