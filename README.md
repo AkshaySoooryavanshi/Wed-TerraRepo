@@ -4,10 +4,9 @@
 ![Infrastructure](./assests/AWS-Three-Tier-Architecture.jpg)
 
 ## Project Description
-- Dockerize a Flask app and push it to AWS Elastic Container Registry (ECR).
-- Deploy AWS Infrastructure using Terraform modules.
-- Provision EC2 Instances and pull latest Docker image and run it.
-- Finally: You will have a container running flask app on 2 EC2 Instances behind Application Load Balancer.
+
+- Deployed AWS Infrastructure using Terraform modules.
+ - Aa running web application in 2 EC2 Instances behind Application Load Balancer.
 
 
 ## Technologies Used in Detail: 
@@ -18,11 +17,20 @@
 	- RDS, and Elasticache.
 	- S3 and Dynamodb: to store state file and lock it.
 	- Security Groups.
-3. **Docker**: To dockerize my Flask application using a Dockerfile.
-4. **GitHub Actions (CI/CD) Pipeline**: To do these Jobs on every git push command, also manually triggered:
+
+3. **GitHub Actions (CI/CD) Pipeline**: To do these Jobs on every git push command, also manually triggered:
 	- Automate the Infrastructure building and destroying process.
 	- Provision the EC2 Instances (Install and configure Docker).
+Next Steps:
+
 	- Build, push docker image to Artifactory, then pull and run docker container in the ec2 instance.
+
+![image](https://github.com/AkshaySoooryavanshi/Wed-TerraRepo/assets/96631562/ef1d1ecc-7394-40f2-b896-bbd8d31500d0)
+
+
+
+
+
 
 Access Token from Hashicrop Vault
 Request the JWT from the GitHub OIDC provider, and present it to HashiCorp Vault to receive an access token:
