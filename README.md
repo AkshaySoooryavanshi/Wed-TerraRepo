@@ -6,7 +6,8 @@
 ## Project Description
 
 - Deployed AWS Infrastructure using Terraform modules.
- - Aa running web application in 2 EC2 Instances behind Application Load Balancer.
+ - App running web application in 2 EC2 Instances behind Application Load Balancer.
+ - One click or Trgger work flow to provision AWS infra and deployment.
 
 
 ## Technologies Used in Detail: 
