@@ -21,13 +21,14 @@
 
 3. **GitHub Actions (CI/CD) Pipeline**: To do these Jobs on every git push command, also manually triggered:
 	- Automate the Infrastructure building and destroying process.
-	- Provision the EC2 Instances (Install and configure Docker).
+	- Provision the EC2 Instances and deploy application.
 
 **Next Steps:**
 
 	- Build, push docker image to ECR/Artifactory.
         - spin up AWS EKS infra using the AWS EKS module for terraform and integrate in workflow file.
 	- Helm chart deployment
+4.  Monitoring and Logging
 ![image](https://github.com/AkshaySoooryavanshi/Wed-TerraRepo/assets/96631562/107f8de2-115e-4590-b130-6c09b37880ce)
 
 ![image](https://github.com/AkshaySoooryavanshi/Wed-TerraRepo/assets/96631562/ef1d1ecc-7394-40f2-b896-bbd8d31500d0)
