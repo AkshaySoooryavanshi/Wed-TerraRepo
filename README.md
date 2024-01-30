@@ -40,7 +40,47 @@
 
 Access Token from Hashicrop Vault
 Request the JWT from the GitHub OIDC provider, and present it to HashiCorp Vault to receive an access token:
-You can use the hashicorp/vault-action action to fetch the JWT and receive the access token from Vaul
+You can use the hashicorp/vault-action action to fetch the JWT and receive the access token from Vault
+
+CI/CD:
+
+GitHub (Version Control) 
+    |
+    v
+GitHub Actions (CI Pipeline)
+    |
+    v
+Amazon ECR /Artifactory(Docker Image Registry)
+    |
+    v
+Terraform (Provision AWS Infrastructure)
+    |
+    v
+AWS EKS (Kubernetes Cluster)
+    |
+    v
+Helm (Application Deployment)
+    |
+    v
+Harness (Continuous Deployment/GitOps)
+    |
+    v
+AWS Secrets Manager/HashiCorp Vault (Secrets Management)
+    |
+    v
+Monitoring & Logging (Amazon CloudWatch, Prometheus, Grafana)
+    |
+    v
+Performance Monitoring 
+    |
+    v
+Security (AWS WAF, AWS Shield)
+    |
+    v
+Notifications 
+    |
+    v
+Backup & DR 
 
 
 
