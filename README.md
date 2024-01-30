@@ -22,7 +22,11 @@
 4. **GitHub Actions (CI/CD) Pipeline**: To do these Jobs on every git push command, also manually triggered:
 	- Automate the Infrastructure building and destroying process.
 	- Provision the EC2 Instances (Install and configure Docker).
-	- Build, push docker image to AWS ECR, then pull and run docker container in the ec2 instance.
+	- Build, push docker image to Artifactory, then pull and run docker container in the ec2 instance.
+
+Access Token from Hashicrop Vault
+Request the JWT from the GitHub OIDC provider, and present it to HashiCorp Vault to receive an access token:
+You can use the hashicorp/vault-action action to fetch the JWT and receive the access token from Vaul
 
 
 
