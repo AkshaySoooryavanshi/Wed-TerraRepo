@@ -23,7 +23,7 @@
 	- Provision the EC2 Instances (Install and configure Docker).
 Next Steps:
 
-	- Build, push docker image to Artifactory, then pull and run docker container in the ec2 instance.
+	- Build, push docker image to ECR/Artifactory, then pull and run docker container in the ec2 instance.
 
 ![image](https://github.com/AkshaySoooryavanshi/Wed-TerraRepo/assets/96631562/ef1d1ecc-7394-40f2-b896-bbd8d31500d0)
 
