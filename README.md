@@ -42,7 +42,6 @@
     ├── backend.tf
     └── provider.tf
 4.  Monitoring and Logging
-![image](https://github.com/AkshaySoooryavanshi/Wed-TerraRepo/assets/96631562/107f8de2-115e-4590-b130-6c09b37880ce)
 
 ![image](https://github.com/AkshaySoooryavanshi/Wed-TerraRepo/assets/96631562/ef1d1ecc-7394-40f2-b896-bbd8d31500d0)
 
