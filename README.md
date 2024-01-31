@@ -1,4 +1,4 @@
-# Deploying AWS Webapp with Terraform and GitHub Actions (CI/CD) Pipeline
+# Deploying Webapp with Terraform, AWS and GitHub Actions
 
 ## Project Structure
 ![Infrastructure](./assests/AWS-Three-Tier-Architecture.jpg)
