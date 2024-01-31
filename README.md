@@ -28,6 +28,19 @@
 	- Build, push docker image to ECR/Artifactory.
         - spin up AWS EKS infra using the AWS EKS module for terraform and integrate in workflow file.
 	- Helm chart deployment
+ terraform/
+├── modules/
+│   ├── network/
+│   ├── database/
+│   ├── compute/
+│   └── ... (other reusable modules)
+├── environments/
+│   ├── dev/
+│   ├── staging/
+│   └── prod/
+└── shared/
+    ├── backend.tf
+    └── provider.tf
 4.  Monitoring and Logging
 ![image](https://github.com/AkshaySoooryavanshi/Wed-TerraRepo/assets/96631562/107f8de2-115e-4590-b130-6c09b37880ce)
 
